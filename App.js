@@ -6,6 +6,7 @@ import {
   Image,
   Button,
   TouchableHighlight,
+  Pressable,
 } from "react-native";
 
 const icon = require("./assets/icon.png");
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <TouchableHighlight
+      <Pressable
         underlayColor={"#09f"}
         onPress={() => alert("Hola")}
         style={{
@@ -26,7 +27,7 @@ export default function App() {
         }}
       >
         <Text style={{ color: "white" }}>Pulsa aqui!</Text>
-      </TouchableHighlight>
+      </Pressable>
     </View>
   );
 }
