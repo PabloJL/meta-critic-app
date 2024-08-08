@@ -18,15 +18,20 @@ export default function Main() {
   }, []);
 
   return (
-    <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
-      <View style={{ marginBottom: 20 }}>
-        <Logo />
+    <View
+      className="bg-black"
+      style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
+    >
+      <View>
+        <View style={{ marginBottom: 20 }}>
+          <Logo />
+        </View>
+        <Link asChild href="/about">
+          <Pressable>
+            <CircleInfoIcon />
+          </Pressable>
+        </Link>
       </View>
-      <Link asChild href="/about">
-        <Pressable>
-          <CircleInfoIcon />
-        </Pressable>
-      </Link>
       {games.length === 0 ? (
         <ActivityIndicator />
       ) : (
