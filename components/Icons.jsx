@@ -12,3 +12,7 @@ export const HomeIcon = (props) => (
 export const InfoIcon = (props) => (
   <FontAwesome name="info" size={32} color="white" {...props} />
 );
+
+export const Search = (props) => (
+  <FontAwesome name="search" size={24} color="black" />
+);
