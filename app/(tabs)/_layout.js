@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import { View } from "react-native";
-import { InfoIcon, HomeIcon } from "../../components/Icons";
+import { InfoIcon, HomeIcon, SearchIcon } from "../../components/Icons";
 
 export default function TabsLayout() {
   return (
@@ -15,6 +15,13 @@ export default function TabsLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => <HomeIcon color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="search"
+        options={{
+          title: "Search",
+          tabBarIcon: ({ color }) => <SearchIcon color={color} />,
         }}
       />
       <Tabs.Screen
